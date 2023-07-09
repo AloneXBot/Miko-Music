@@ -19,7 +19,7 @@ MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
-    getenv("DURATION_LIMIT", "180")
+    getenv("DURATION_LIMIT", "600")
 )  # Remember to give value in Minutes
 
 # Duration Limit for downloading Songs in MP3 or MP4 format from bot
@@ -31,7 +31,7 @@ SONG_DOWNLOAD_DURATION = int(
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
 
 # A name for your Music bot.
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "MikoMusic")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "AloneMusic")
 
 # Your User ID.
 OWNER_ID = list(map(int, getenv("OWNER_ID", "").split()))  # Input type must be interger
@@ -45,7 +45,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/Infamous-Hydra/Miko-Music",
+    "https://github.com/AloneXBot/Miko-Music",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -54,9 +54,9 @@ GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/hydraXsupport"
+    "SUPPORT_CHANNEL", "https://t.me/AloneXBots"
 )  # Example:- https://t.me/HydraXSupport
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/hydraXsupport")  # Example:- https://t.me/HydraXSupport
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/AlonesHeaven")  # Example:- https://t.me/HydraXSupport
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", None)
@@ -147,7 +147,7 @@ autoclean = []
 
 
 # Images
-START_IMG_URL = getenv("START_IMG_URL", None)
+START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/bcbe361ba749a25a262a1.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
